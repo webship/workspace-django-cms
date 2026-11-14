@@ -1,0 +1,76 @@
+{
+  "name": "@webship.co/workspace-django-cms",
+  "version": "1.0.7",
+  "description": "django CMS for Webship Workspace: the builder (`cmd-django-cms-project.sh`) and the manage.py tool in every sites folder, the default accounts, the django CMS step pack wired into the testing setup, and two AI agents in the AI Agents folder.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webship/workspace-django-cms.git"
+  },
+  "files": [
+    "dist/src",
+    "agents",
+    "commands",
+    "features",
+    "scripts",
+    "testing",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "workspacePlugin": {
+    "name": "django-cms",
+    "label": "django CMS",
+    "commands": {
+      "types": [
+        "sites"
+      ],
+      "workspaces": [
+        "dev",
+        "test",
+        "sandboxes",
+        "demos"
+      ],
+      "files": [
+        "commands/cmd-django-cms-project.sh",
+        "commands/cmd-tools-django-cms-cli.sh"
+      ]
+    },
+    "scripts": {
+      "functions": [
+        "scripts/functions/fun-django-cms.sh"
+      ],
+      "args": [
+        "scripts/args/arg-django-cms.sh",
+        "scripts/args/arg-django-cms-cli.sh"
+      ],
+      "machine": [
+        "scripts/django-cms-accounts.py",
+        "testing/site.feature"
+      ]
+    },
+    "ai": {
+      "agents": [
+        "agents/django-cms-site-builder.md",
+        "agents/django-cms-tester.md"
+      ]
+    },
+    "features": [
+      "features/django-cms.feature"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@webship.co/workspace-plugin-api": "^1.0.7",
+    "typescript": "^5.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
