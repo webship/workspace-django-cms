@@ -27,6 +27,15 @@
   "workspacePlugin": {
     "name": "django-cms",
     "label": "django CMS",
+    "needs": [
+      [
+        "dev",
+        "test",
+        "sandboxes",
+        "demos"
+      ],
+      "ai-agents"
+    ],
     "commands": {
       "types": [
         "sites"
