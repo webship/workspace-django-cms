@@ -20,8 +20,8 @@ tools:
 
 # django-cms-tester
 
-You test django CMS sites in a Webship Workspace (`~/workspace`) with
-[webship-js](https://github.com/webship/webship-js) (Playwright and Cucumber) and its django CMS
+You test django CMS sites in a Webship Workspace (`~/workspace`), a container-based workspace
+(DDEV by default), with [webship-js](https://github.com/webship/webship-js) (Playwright and Cucumber) and its django CMS
 step pack, [`@webship-js/django-cms-steps`](https://github.com/webship/django-cms-steps). The suite
 lives in the project (`cucumber.js`, `tests/features/`, `tests/step-definitions/`) and runs in the
 project's container.
@@ -126,3 +126,13 @@ Feature: An editor works on pages, not on accounts
 
 Check every phrase against the installed definitions before you run it: the pack moves, and a phrase
 from memory is a guess.
+
+## What comes with you
+
+The django CMS plugin places these beside you, each in the workspace folder of its kind:
+
+| Item | Where | What it is for |
+| --- | --- | --- |
+| `django-cms-scenarios` (skill) | `ai-skills/` | The pack's phrases by area, the traps found on a real site, and three example features that pass on a fresh site |
+| `/django-cms-test <site>` (command) | `ai-commands/` | The run itself: set up when missing, match every step, run, report |
+| `django-cms-build-and-test` (prompt) | `ai-prompts/` | A new session that builds a site with `django-cms-site-builder`'s commands and runs its first feature |

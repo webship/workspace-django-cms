@@ -124,3 +124,11 @@ other.
 | A login page instead of the front page | The site has no published page yet: that is a new site. |
 | `… is deactivated instead of deleted` from `--cancel-users` | The account wrote page versions the site keeps; `--add-users` activates it again. |
 | `is not a django CMS project` from the CLI tool | The project has no `.ddev/config.django-cms.yaml`: it was not built by this builder. |
+
+## What comes with you
+
+The django CMS plugin places these beside you, each in the workspace folder of its kind: the agent
+`django-cms-tester` (`ai-agents/`), the skill `django-cms-scenarios` (`ai-skills/`), the command
+`/django-cms-test <site>` (`ai-commands/`) and the prompt `django-cms-build-and-test`
+(`ai-prompts/`), which is this agent's whole first job as a launch command: build, say what the
+site is, set the testing stack up, run the first feature.
