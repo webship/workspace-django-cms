@@ -20,7 +20,7 @@
 
 # The step pack a django CMS project is tested with, and the release line it is required at.
 readonly DJANGO_CMS_STEPS_PACKAGE='@webship-js/django-cms-steps';
-readonly DJANGO_CMS_STEPS_VERSION='^2.1.0';
+readonly DJANGO_CMS_STEPS_VERSION='^2.2.0';
 
 # Where the site lives in the web container: the virtual environment, the Django project that the
 # django CMS quickstart command makes, and the port the server listens on.

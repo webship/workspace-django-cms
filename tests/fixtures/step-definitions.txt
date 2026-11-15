@@ -1,4 +1,4 @@
-# @webship-js/django-cms-steps 2.1.0 and webship-js 2.0.10
+# @webship-js/django-cms-steps 2.2.0 and webship-js 2.0.10
 ^a (GET|POST|PUT|PATCH|DELETE) request to "([^"]*)" should have been made$
 ^all cookies are cleared$
 ^a request to "([^"]*)" should have been made$
@@ -15,7 +15,7 @@
 ^(I am |we are )*not logged in$
 ^(?:(?:I am |we are )*on|(?:I |we )*go to) the (?:admin )?login page$
 ^(?:(?:I am |we are )*on|(?:I |we )*go to) the (users|groups|sites|aliases|global page permissions) (?:admin )?list$
-^(I am |we are )*on the (?:(?:django )?CMS )?page tree$
+^(I am |we are )*on the (?:CMS )?page tree$
 ^(I am |we are )?on( the)* (homepage|frontpage)$
 ^(I am |we are )*on( the)* "([^"]*)?"( page)*$
 ^(I am |we are )?viewing the site on a (?:"([^"]+)"|([a-zA-Z0-9 _,]+)) (?:screen|device)$
@@ -58,9 +58,9 @@
 ^(I |we )*click "([^"]*)" by attr inside the iframe$
 ^(I |we )*click "([^"]*)?" by( its)*(?: "([^"]*)?")* (attribute|attr)$
 ^(I |we )*click "([^"]*)" inside the iframe$
-^(I |we )*click "([^"]*)" in the (?:django )?CMS (modal|sideframe)$
-^(I |we )*click "([^"]*)" in the "([^"]*)" (?:(?:django )?CMS )?toolbar menu$
-^(I |we )*click "([^"]*)" in the (?:(?:django )?CMS )?toolbar menu$
+^(I |we )*click "([^"]*)" in the CMS (modal|sideframe)$
+^(I |we )*click "([^"]*)" in the "([^"]*)" (?:CMS )?toolbar menu$
+^(I |we )*click "([^"]*)" in the (?:CMS )?toolbar menu$
 ^(I |we )*click "([^"]*)" in the navigation menu$
 ^(I |we )*click "([^"]*)?" in( the)* "([^"]*)?" row$
 ^(I |we )*click (?:on |a )?([a-zA-Z0-9 ,\-]+)$
@@ -69,14 +69,14 @@
 ^(I |we )*click on the link with the title "([^"]*)"$
 ^(I |we )*click on "([^"]*)" while holding "([^"]*)"$
 ^(I |we )*click the "([^"]*)" (button|link|tab|menuitem|checkbox|radio|option)$
-^(I |we )*click the "([^"]*)" (?:(?:django )?CMS )?toolbar button$
+^(I |we )*click the "([^"]*)" (?:CMS )?toolbar button$
 ^(I |we )*(close|dismiss)( the)* modal( dialog)*$
-^(I |we )*close the (?:django )?CMS (modal|sideframe)$
+^(I |we )*close the CMS (modal|sideframe)$
 ^(I |we )*create a (sub ?page|page) (?:titled|with the title) "([^"]*)"(?: with the (?:text|content) "([^"]*)")? with the wizard$
 ^(I |we )*define css selectors:$
 ^(I |we )*define xpath selectors:$
 ^(I |we )*delete the (?:(first|second|third|fourth|fifth|last|\d+)(?:st|nd|rd|th)? )?"([^"]*)" plugin in the "([^"]*)" placeholder$
-^(I |we )*delete the page "([^"]*)" (?:in|from) the (?:(?:django )?CMS )?page tree$
+^(I |we )*delete the page "([^"]*)" (?:in|from) the (?:CMS )?page tree$
 ^(I |we )*do not accept any confirmation dialogs$
 ^(I |we )*(don't|do not) see ([a-zA-Z0-9 ,\-]+)$
 ^(I |we )*double[- ]click on "([^"]*)"$
@@ -103,7 +103,7 @@
 ^(I |we )*fill in "([^"]*)?" with "([^"]*)?" by( its)*(?: "([^"]*)?")* (attribute|attr)$
 ^(I |we )*fill in "([^"]*)?" with: by( its)*(?: "([^"]*)?")* (attribute|attr)$
 ^(I |we )*fill in "([^"]*)" with "([^"]*)" inside the iframe$
-^(I |we )*fill in "([^"]*)" with "([^"]*)" in the (?:django )?CMS (modal|sideframe)$
+^(I |we )*fill in "([^"]*)" with "([^"]*)" in the CMS (modal|sideframe)$
 ^(I |we )*focus on the element "([^"]*)"$
 ^(I |we )*follow "([^"]*)"$
 ^(I |we )*go back$
@@ -115,14 +115,14 @@
 ^(I |we )*move backward one page$
 ^(I |we )*move focus to "([^"]*)" field$
 ^(I |we )*move forward one page$
-^(I |we )*move the page "([^"]*)" (?:under the page "([^"]*)" in|to the (top) level of) the (?:(?:django )?CMS )?page tree$
+^(I |we )*move the page "([^"]*)" (?:under the page "([^"]*)" in|to the (top) level of) the (?:CMS )?page tree$
 ^(I |we )*move the pointer to "([^"]*)"$
 ^(I |we )*(open|close) the structure board$
 ^(I |we )*open "([^"]*)" in the admin list$
-^(I |we )*open the (advanced )?settings of the page "([^"]*)" in the (?:(?:django )?CMS )?page tree$
+^(I |we )*open the (advanced )?settings of the page "([^"]*)" in the (?:CMS )?page tree$
 ^(I |we )*open the (?:create|page) wizard$
 ^(I |we )*(?:open the page for editing|edit the page|switch to edit mode)$
-^(I |we )*open the page "([^"]*)" from the (?:(?:django )?CMS )?page tree$
+^(I |we )*open the page "([^"]*)" from the (?:CMS )?page tree$
 ^(I |we )*pause the clock$
 ^(I |we )*press "([^"]*)?" by( its)*(?: "([^"]*)?")* (attribute|attr)$
 ^(I |we )*press( the)* "([^"]*)?"( button)*$
@@ -138,7 +138,7 @@
 ^(?:I |we )*print the full accessibility check$
 ^(I |we )*print xpath selectors$
 ^(I |we )*publish the page$
-^(I |we )*(publish|unpublish) the page "([^"]*)" in the (?:(?:django )?CMS )?page tree$
+^(I |we )*(publish|unpublish) the page "([^"]*)" in the (?:CMS )?page tree$
 ^(I |we )*reload( the)*( page)*$
 ^(I |we )*restore the auth state from "([^"]*)"$
 ^(I |we )*resume the clock$
@@ -198,8 +198,8 @@
 ^(I |we )*should( not)* see (a |the )*modal( dialog)*$
 ^(I |we )*should( not)* see (a |the )*modal with title "([^"]*)?"$
 ^(I |we )*should( not)* see "([^"]*)" in the admin list$
-^(I |we )*should( not)* see "([^"]*)" in the (?:django )?CMS (modal|sideframe)$
-^(I |we )*should( not)* see "([^"]*)" in the (?:(?:django )?CMS )?page tree$
+^(I |we )*should( not)* see "([^"]*)" in the CMS (modal|sideframe)$
+^(I |we )*should( not)* see "([^"]*)" in the (?:CMS )?page tree$
 ^(I |we )*should( not)* see "([^"]*)?" in( the)* "([^"]*)?" element$
 ^(I |we )*should( not)* see "([^"]*)?" in( the)* "([^"]*)?" element by( its)*(?: "([^"]*)?")* (attribute|attr)$
 ^(I |we )*should( not)* see "([^"]*)?" in( the)* modal( dialog)*$
@@ -208,10 +208,10 @@
 ^(I |we )*should( not)* see text matching "([^"]*)?" in( the)* "([^"]*)?" element$
 ^(I |we )*should( not)* see the (?:admin )?login form$
 ^(I |we )*should( not)* see the breadcrumbs?(?: trail)?$
-^(I |we )*should( not)* see the (?:django )?CMS message "([^"]*)"$
-^(I |we )*should( not)* see the (?:(?:django )?CMS )?page tree$
-^(I |we )*should( not)* see the (?:(?:django )?CMS )?toolbar$
-^(I |we )*should( not)* see the (?:(?:django )?CMS )?welcome screen$
+^(I |we )*should( not)* see the CMS message "([^"]*)"$
+^(I |we )*should( not)* see the (?:CMS )?page tree$
+^(I |we )*should( not)* see the (?:CMS )?toolbar$
+^(I |we )*should( not)* see the (?:CMS )?welcome screen$
 ^(I |we )*should( not)* see the "([^"]*)" placeholder$
 ^(I |we )*should( not)* see the structure board$
 ^(I |we )*should see (\d+) "([^"]*)" elements?$
@@ -284,15 +284,16 @@
 ^(?:the )?API response should not contain "([^"]*)"$
 ^the breadcrumbs? should( not)* contain "([^"]*)"$
 ^the "([^"]*)" (button|link|tab|menuitem|checkbox|radio|option) should be visible(?: within (\d+) seconds?)?$
+^the CMS modal should( not)* be open$
+^the CMS modal title should( not)* (be|contain) "([^"]*)"$
+^the (?:CMS )?sideframe should( not)* be showing "([^"]*)"$
+^the "([^"]*)" (?:CMS )?toolbar menu should( not)* list "([^"]*)"$
+^the (?:CMS )?toolbar should( not)* have the "([^"]*)" button$
+^the (?:CMS )?toolbar should( not)* have the "([^"]*)" menu$
+^the CMS version should( not)* (be|start with) "([^"]*)"$
 ^(?:the cookie|cookie) "([^"]*)" is set to "([^"]*)"$
 ^the cookie "([^"]*)" is removed$
 ^the (?:create|page) wizard should( not)* offer "([^"]*)"$
-^the (?:django )?CMS modal should( not)* be open$
-^the (?:django )?CMS modal title should( not)* (be|contain) "([^"]*)"$
-^the (?:(?:django )?CMS )?sideframe should( not)* be showing "([^"]*)"$
-^the "([^"]*)" (?:(?:django )?CMS )?toolbar menu should( not)* list "([^"]*)"$
-^the (?:(?:django )?CMS )?toolbar should( not)* have the "([^"]*)" button$
-^the (?:(?:django )?CMS )?toolbar should( not)* have the "([^"]*)" menu$
 ^(the )*"([^"]*)?" element should( not)* contain "([^"]*)?"$
 ^the element "([^"]*)" should not violate the accessibility rule "([^"]*)"$
 ^the element "([^"]*)" should pass an accessibility audit$
@@ -323,10 +324,10 @@
 ^the page should have exactly one h1$
 ^the page should have no accessibility violations$
 ^the page should have no (critical|serious|moderate|minor) accessibility violations$
-^the page "([^"]*)" should( not)* be a sub ?page of "([^"]*)" in the (?:(?:django )?CMS )?page tree$
+^the page "([^"]*)" should( not)* be a sub ?page of "([^"]*)" in the (?:CMS )?page tree$
 ^the page should( not)* be at version (\d+)$
-^the page "([^"]*)" should( not)* be (published|a draft|draft|unpublished|archived|changed|empty) in the (?:(?:django )?CMS )?page tree$
-^the page "([^"]*)" should( not)* be the home ?page in the (?:(?:django )?CMS )?page tree$
+^the page "([^"]*)" should( not)* be (published|a draft|draft|unpublished|archived|changed|empty) in the (?:CMS )?page tree$
+^the page "([^"]*)" should( not)* be the home ?page in the (?:CMS )?page tree$
 ^the page should( not)* have editable plugins$
 ^the page should not violate the accessibility rule "([^"]*)"$
 ^the page should pass an accessibility audit(?: at level "(A|AA|AAA)")?$
@@ -345,7 +346,6 @@
 ^the (?:rich )?text editor should( not)* contain "([^"]*)"$
 ^(?:the )?session storage "([^"]*)" is removed$
 ^(?:the )?session storage "([^"]*)" is set to "([^"]*)"$
-^the site should( not)* be running django CMS(?: (\d+(?:\.\d+)*))?$
 ^the system time is "([^"]*)"$
 ^the URL "([^"]*)" is blocked$
 ^the URL "([^"]*)" is delayed by (\d+) ?ms$
