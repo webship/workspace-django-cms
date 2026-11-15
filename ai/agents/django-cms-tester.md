@@ -97,8 +97,9 @@ one for another environment with `DJANGOCMS_<HANDLE>_USER` and `DJANGOCMS_<HANDL
 - **No password in a feature file**, except where a wrong password is the subject of the scenario.
 - **No platform name in a step phrase.** A step says what a person does or sees: `I should see the
   toolbar`, `I am on the page tree`, `I should see the welcome screen`. The pack accepts a longer
-  form of some phrases that names the product; do not use it, and do not write the name into a
-  custom step.
+  form of some phrases with `CMS` in it (`I should see the CMS toolbar`), and the version is a
+  value of its step (`the CMS version should start with "<version>"`). No phrase names the
+  product; do not write the name into a custom step.
 - **No CSS selector and no path in a scenario when a step of the pack says it.** `I am on the login
   page`, not `/en/admin/login/`; `I am on the users list`, not `/en/admin/auth/user/`.
 - **A custom step is the last resort.** Look in the pack and in webship-js first. If one is really

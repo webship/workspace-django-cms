@@ -195,9 +195,10 @@ landmarks and accessibility audits are used as they are and never redefined for 
   the `administrator` default account.
 - **No password in a feature file**, except where a wrong password is the subject.
 - **No platform name in a step phrase**: `I am on the page tree`, `I should see the toolbar`,
-  `I should see the welcome screen`. The pack takes the longer forms that name the product too,
-  and has one step that needs the name; a feature of this workspace uses the short forms and
-  leaves that step out. The same holds for a custom step.
+  `I should see the welcome screen`. The pack takes a longer form with `CMS` in it too
+  (`I should see the CMS toolbar`), and the version is a value of its step:
+  `the CMS version should start with "<version>"`, for a logged-in staff user on a page of the
+  CMS. No phrase names the product, and a custom step does not either.
 - **No selector and no address when a step says it**: `the users list`, not the path of the list.
 - **What a scenario creates, it removes** in the same scenario, under a title nobody else uses.
 - **A custom step is the last resort**: look in the pack and in webship-js first, write it in
